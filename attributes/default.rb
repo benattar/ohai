@@ -17,8 +17,6 @@
 # limitations under the License.
 #
 
-# FHS location would be /var/lib/chef/ohai_plugins or similar.
-default["ohai"]["plugin_path"] = "/etc/chef/ohai_plugins"
 
 # The list of plugins and their respective file locations
 default["ohai"]["plugins"] = {'ohai' => 'plugins'}

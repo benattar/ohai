@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+node.set['ohai']['plugin_path'] = node['chef_packages']['ohai']['ohai_root']+"/plugins"
 unless Ohai::Config[:plugin_path].include?(node['ohai']['plugin_path'])
   Ohai::Config[:plugin_path] << node['ohai']['plugin_path']
 end
